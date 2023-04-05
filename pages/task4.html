@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <a href="#top"><img src="../images/arr.png" class="top"></a>
+    <a href="../index.html"><img src="../images/arr.png" class="back"></a>
+<details>
+    <summary>
+        Довідники
+    </summary>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="svg.html">SVG</a>
+    <a href="canvas.html">Canvas</a>
+</details>
+<div class="left a">
+    <h6>HTML</h6>
+    <a href="task1.html"><h3>завдання 1</h3></a>
+    <a href="task2.html"><h3>завдання 2</h3></a>
+    <a href="task3.html"><h3>завдання 3</h3></a>
+    <a href="task4.html"><h3>завдання 4</h3></a>
+    <a href="task5.html"><h3>завдання 5</h3></a>
+
+</div>
+
+<div class="right a">
+    <h6>CSS</h6>
+    <a href="task7.html"><h3>1 завдання</h3></a>
+    <a href="task8.html"><h3>2 завдання</h3></a>
+    <a href="task9.html"><h3>3 завдання</h3></a>
+    <a href="task10.html"><h3>4 завдання</h3></a>
+    <a href="task11.html"><h3>5 завдання</h3></a>
+
+</div>
+
+    <div class="page">
+       <h1 class="headline">Основні теги HTML</h1>
+       <p>Тренажер для кращого запам’ятовування HTML тегів</p>
+
+       <div class="task">
+        <div class="buttons">
+
+                <button class="prev"><<-</button>
+                <button class="next">->></button>
+            </div>
+
+       <div class="tags">
+                <figure>
+                    <article>
+                        h1
+                    </article>
+                    <figcaption>
+                        заголовок
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        h2
+                    </article>
+                    <figcaption>
+                        підзаголовок
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        p
+                    </article>
+                    <figcaption>
+                        абзац тексту
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        a
+                    </article>
+                    <figcaption>
+                        посилання
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        li
+                    </article>
+                    <figcaption>
+                        елемент списку
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        ul
+                    </article>
+                    <figcaption>
+                        маркований список
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        button
+                    </article>
+                    <figcaption>
+                        кнопка
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        input
+                    </article>
+                    <figcaption>
+                        поле для вводу
+                    </figcaption>
+                </figure>
+                   <figure>
+                    <article>
+                        hr
+                    </article>
+                    <figcaption>
+                        горизонтальна лінія
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        img
+                    </article>
+                    <figcaption>
+                        зображення
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        div
+                    </article>
+                    <figcaption>
+                        блок
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        nav
+                    </article>
+                    <figcaption>
+                        навігація по сайту
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        section
+                    </article>
+                    <figcaption>
+                        розділ сайту
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        article
+                    </article>
+                    <figcaption>
+                        стаття
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                       footer
+                    </article>
+                    <figcaption>
+                        підвал сайту
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        header
+                    </article>
+                    <figcaption>
+                        шапка сайту
+                    </figcaption>
+                </figure>
+                <figure>
+                <article>
+                        br
+                    </article>
+                    <figcaption>
+                        пустий рядок
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js">
+    </script>
+    <script >
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
+
+var tags = document.querySelectorAll('figure');
+var i = 0;
+
+prev.onclick = function(){
+     tags[i].style.display = 'none';
+     i--;
+
+     if(i < 0){
+         i = tags.length - 1;
+     }
+
+     tags[i].style.display = 'block';
+}
+
+next.onclick = function(){
+     tags[i].style.display = 'none';
+     i++;
+
+     if(i >= tags.length){
+         i = 0;
+     }
+
+     tags[i].style.display = 'block';
+}
+    </script>
+
+
+</body>
+</html>

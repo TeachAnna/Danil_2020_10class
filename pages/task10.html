@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <a href="#top"><img src="../images/arr.png" class="top"></a>
+    <a href="../index.html"><img src="../images/arr.png" class="back"></a>
+<details>
+    <summary>
+        Довідники
+    </summary>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="svg.html">SVG</a>
+    <a href="canvas.html">Canvas</a>
+</details>
+<div class="left a">
+    <h6>HTML</h6>
+    <a href="task1.html"><h3>завдання 1</h3></a>
+    <a href="task2.html"><h3>завдання 2</h3></a>
+    <a href="task3.html"><h3>завдання 3</h3></a>
+    <a href="task4.html"><h3>завдання 4</h3></a>
+    <a href="task5.html"><h3>завдання 5</h3></a>
+
+</div>
+
+<div class="right a">
+    <h6>CSS</h6>
+    <a href="task7.html"><h3>1 завдання</h3></a>
+    <a href="task8.html"><h3>2 завдання</h3></a>
+    <a href="task9.html"><h3>3 завдання</h3></a>
+    <a href="task10.html"><h3>4 завдання</h3></a>
+    <a href="task11.html"><h3>5 завдання</h3></a>
+
+</div>
+
+    <div class="page">
+       <h1 class="headline">Основні теги HTML</h1>
+<p>Тренажер для кращого запам’ятовування HTML тегів</p>
+
+       <div class="task">
+        <div class="buttons">
+
+                <button class="prev"><<-</button>
+                <button class="next">->></button>
+            </div>
+
+       <div class="tags">
+                <figure>
+                    <article>
+                        background
+                    </article>
+                    <figcaption>
+                        задній фон
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        color
+                    </article>
+                    <figcaption>
+                        колір тексту
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        padding
+                    </article>
+                    <figcaption>
+                        внутрішній відступ
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        margin
+                    </article>
+                    <figcaption>
+                        зовнішній відступ
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        width
+                    </article>
+                    <figcaption>
+                        ширина
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        height
+                    </article>
+                    <figcaption>
+                        висота
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        display
+                    </article>
+                    <figcaption>
+                        показ елементів
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        border
+                    </article>
+                    <figcaption>
+                        рамка
+                    </figcaption>
+                </figure>
+                   <figure>
+                    <article>
+                       border-radius
+                    </article>
+                    <figcaption>
+                        скруглення кутів
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        box-shadow
+                    </article>
+                    <figcaption>
+                        тінь
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        taxt-align
+                    </article>
+                    <figcaption>
+                        вирівнювання
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        font-size
+                    </article>
+                    <figcaption>
+                        розмір шрифту
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        transition
+                    </article>
+                    <figcaption>
+                        періхід
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        transform
+                    </article>
+                    <figcaption>
+                        трансформація
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                       animation
+                    </article>
+                    <figcaption>
+                        анімація
+                    </figcaption>
+                </figure>
+                <figure>
+                    <article>
+                        float
+                    </article>
+                    <figcaption>
+                        обтікання
+                    </figcaption>
+                </figure>
+                <figure>
+                <article>
+                        position
+                    </article>
+                    <figcaption>
+                        позиціонування
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js">
+    </script>
+    <script >
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
+
+var tags = document.querySelectorAll('figure');
+var i = 0;
+
+prev.onclick = function(){
+     tags[i].style.display = 'none';
+     i--;
+
+     if(i < 0){
+         i = tags.length - 1;
+     }
+
+     tags[i].style.display = 'block';
+}
+
+next.onclick = function(){
+     tags[i].style.display = 'none';
+     i++;
+
+     if(i >= tags.length){
+         i = 0;
+     }
+
+     tags[i].style.display = 'block';
+}
+    </script>
+
+
+</body>
+</html>

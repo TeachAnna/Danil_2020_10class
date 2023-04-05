@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <a href="#top"><img src="../images/arr.png" class="top"></a>
+    <a href="../index.html"><img src="../images/arr.png" class="back"></a>
+<details>
+    <summary>
+        Довідники
+    </summary>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="svg.html">SVG</a>
+    <a href="canvas.html">Canvas</a>
+</details>
+<div class="left a">
+    <h6>HTML</h6>
+    <a href="task1.html"><h3>завдання 1</h3></a>
+    <a href="task2.html"><h3>завдання 2</h3></a>
+    <a href="task3.html"><h3>завдання 3</h3></a>
+    <a href="task4.html"><h3>завдання 4</h3></a>
+    <a href="task5.html"><h3>завдання 5</h3></a>
+
+</div>
+<div class="right a">
+    <h6>CSS</h6>
+    <a href="task7.html"><h3>1 завдання</h3></a>
+    <a href="task8.html"><h3>2 завдання</h3></a>
+    <a href="task9.html"><h3>3 завдання</h3></a>
+    <a href="task10.html"><h3>4 завдання</h3></a>
+    <a href="task11.html"><h3>5 завдання</h3></a>
+
+</div>
+
+    <div class="page">
+       <h1 class="headline">Основні теги HTML</h1>
+      <p>Впиши відповідну CSS властивість (використовуй маленькі літери без кутових дужок)</p>
+
+            <div class="wr">
+                <label>
+                  Показ
+               </label>
+               <input type="text" id="tag1">
+               <button id="btn1">?</button>
+               <span id="span1"></span>
+            </div>
+            <hr><div class="wr">
+                <label>
+                  Задній фон
+               </label>
+               <input type="text" id="tag2">
+               <button id="btn2">?</button>
+               <span id="span2"></span>
+            </div>
+            <hr>
+
+            <div class="wr">
+                <label>
+                  Колір тексту
+               </label>
+               <input type="text" id="tag3">
+               <button id="btn3">?</button>
+               <span id="span3"></span>
+            </div>
+            <hr>
+            <div class="wr">
+                <label>
+                  Висота
+               </label>
+               <input type="text" id="tag4">
+               <button id="btn4">?</button>
+               <span id="span5"></span>
+            </div>
+            <hr>
+            <div class="wr">
+                <label>
+                  Ширина
+               </label>
+               <input type="text" id="tag5">
+               <button id="btn5">?</button>
+               <span id="span5"></span>
+            </div>
+            <hr>
+            <div class="wr">
+                <label>
+                  Рамка
+               </label>
+               <input type="text" id="tag6">
+               <button id="btn6">?</button>
+               <span id="span6"></span>
+            </div>
+            <hr>
+                        <div class="wr">
+                <label>
+                  Внутрішній відступ
+               </label>
+               <input type="text" id="tag7">
+               <button id="btn7">?</button>
+               <span id="span7"></span>
+            </div>
+            <hr>
+                        <div class="wr">
+                <label>
+                  Зовнішній відступ
+               </label>
+               <input type="text" id="tag8">
+               <button id="btn8">?</button>
+               <span id="span8"></span>
+            </div>
+            <hr>
+
+
+    </div>
+
+<script>
+
+    btn1.onclick = function() {
+        if (tag1.value == "display") {
+          span1.innerHTML = "OK";
+          span1.style.color = "green";
+
+        }else {
+          span1.innerHTML = "Спробуй ще";
+          span1.style.color = "red";
+        }
+    }
+
+   btn2.onclick = function() {
+        if (tag2.value == "background") {
+          span2.innerHTML = "OK";
+          span2.style.color = "green";
+
+        }else {
+          span2.innerHTML = "Спробуй ще";
+          span2.style.color = "red";
+        }
+    }
+
+    btn3.onclick = function() {
+        if (tag3.value == "color") {
+          span3.innerHTML = "OK";
+          span3.style.color = "green";
+
+        }else {
+          span3.innerHTML = "Спробуй ще";
+          span3.style.color = "red";
+        }
+    }
+
+    btn4.onclick = function() {
+        if (tag4.value == "height") {
+          span4.innerHTML = "OK";
+          span4.style.color = "green";
+
+        }else {
+          span4.innerHTML = "Спробуй ще";
+          span4.style.color = "red";
+        }
+    }
+
+    btn5.onclick = function() {
+        if (tag5.value == "width") {
+          span5.innerHTML = "OK";
+          span5.style.color = "green";
+
+        }else {
+          span5.innerHTML = "Спробуй ще";
+          span5.style.color = "red";
+        }
+    }
+
+    btn6.onclick = function() {
+        if (tag6.value == "border") {
+          span6.innerHTML = "OK";
+          span6.style.color = "green";
+
+        }else {
+          span6.innerHTML = "Спробуй ще";
+          span6.style.color = "red";
+        }
+    }
+
+    btn7.onclick = function() {
+        if (tag7.value == "padding") {
+          span7.innerHTML = "OK";
+          span7.style.color = "green";
+
+        }else {
+          span7.innerHTML = "Спробуй ще";
+          span7.style.color = "red";
+        }
+    }
+
+    btn8.onclick = function() {
+        if (tag8.value == "margin") {
+          span8.innerHTML = "OK";
+          span8.style.color = "green";
+
+        }else {
+          span8.innerHTML = "Спробуй ще";
+          span8.style.color = "red";
+        }
+    }
+
+</script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <script src="../js.js">
+
+    </script>
+
+</body>
+</html>
